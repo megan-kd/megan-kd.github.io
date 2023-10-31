@@ -98,3 +98,26 @@ export const projectsData = [
         technologies: "ReactJS, Flask, Python, Azure REST API, Informatica REST API, Figma, Terraform, Azure Pipelines"
     }
 ];
+
+export const skillsData = [
+    {
+        "title": "Programming",
+        "icon": 4,
+        "skillList": ['ReactJS', 'Python', 'C', 'C++', 'SQL', 'HTML', 'CSS', 'Flask', 'Django', 'NodeJS', 'JavaScript', 'Java']
+    },
+    {
+        "title": "Tools",
+        "icon": 3,
+        "skillList": ['Linux CLI', 'Windows CLI', 'Git', 'Docker', 'Kubernetes', 'Terraform', 'Azure Pipelines', 'Azure App Service']
+    },
+    {
+        "title": "Certificates",
+        "icon": 2,
+        "skillList": ['AWS Certified Cloud Practitioner (2021)', 'Azure Fundamentals (2022)', 'Azure Data Fundamentals (2023)']
+    },
+    {
+        "title": "UX Design",
+        "icon": 1,
+        "skillList": ['Figma', 'Wireframes', 'Miro']
+    },
+]
