@@ -11,8 +11,8 @@ const AboutMe = (props) => {
                         ABOUT ME
                     </Typography>
                 </Divider>
-                <Grid container xs={12} spacing={3}>
-                    <Grid item xs={4}>
+                <Grid container xs={12} spacing={{xs: 6, sm: 3}} justifyContent={'center'}>
+                    <Grid item xs={7} sm={7} md={5}>
                         <Card>
                             <CardMedia
                                 component={"img"}
@@ -22,7 +22,7 @@ const AboutMe = (props) => {
                             />
                         </Card>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={11} sm={11} md={6}>
                         <Typography>{data}</Typography>
                         <Button>Check out my Resume!</Button>
                     </Grid>
