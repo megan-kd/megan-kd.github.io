@@ -1,4 +1,4 @@
-import { Typography, Stack, Divider, Card, Grid, CardMedia } from '@mui/material'
+import { Typography, Stack, Divider, Card, Grid, CardMedia, Button} from '@mui/material'
 import React from 'react'
 
 const AboutMe = (props) => {
@@ -24,6 +24,7 @@ const AboutMe = (props) => {
                     </Grid>
                     <Grid item xs={7}>
                         <Typography>{data}</Typography>
+                        <Button>Check out my Resume!</Button>
                     </Grid>
                 </Grid>
             </Stack>
