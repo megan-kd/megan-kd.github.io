@@ -1,15 +1,18 @@
 import React from 'react'
 import { AppBar, Button, Toolbar, Box } from '@mui/material';
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     const appBarOffset = -70;
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    }
     return (
         <>
             <AppBar position={'sticky'} id={'appbar'}>
                 <Toolbar >
                     <Box sx={{ marginRight: "auto" }} >
-                        <Button color='inherit'>Home</Button>
+                        <Button color='inherit' onClick={scrollToTop}>Home</Button>
                     </Box>
                     <Box sx={{ marginLeft: "auto" }}>
                         <Link to="about_me" spy={true} smooth={true} offset={appBarOffset} duration={500}>
