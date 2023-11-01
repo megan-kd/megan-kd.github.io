@@ -21,7 +21,7 @@ const Skill = (props) => {
         <Typography textAlign={"center"}>{iconList[props.icon]}</Typography>
           <Stack spacing={2}>
             <Typography variant='h4' textAlign={"center"}>{props.title}</Typography>
-            <Typography><ul>{bulletList}</ul></Typography>
+            <Typography width={'80%'} textAlign={'left'} padding={'0 10% 0 10%'}><ul>{bulletList}</ul></Typography>
           </Stack>
         </CardContent>
       </Card>

@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const SkillsSection = (props) => {
   const skillsData = props.data;
   const skillCategories = skillsData.map((category) => 
-  <Grid item>
+  <Grid item xs={3}>
       <Item>
         <Skill
           title={category.title}
@@ -34,9 +34,8 @@ const SkillsSection = (props) => {
                 SKILLS
               </Typography>
             </Divider>
-            <Typography variant='h6'>{"Current and past experience with"}</Typography>
         </Stack>
-        <Grid container justifyContent={'center'} spacing={2}>
+        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 8, md: 12 }}>
           {skillCategories}
         </Grid>
     </>
