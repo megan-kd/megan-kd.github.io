@@ -10,11 +10,11 @@ import AboutMe from './about_me/AboutMe';
 function App() {
   return (
     <>
-      <Stack spacing={2}>
+      <Stack spacing={2} id={"app"}>
         <Navbar/>
-        <AboutMe data={aboutMeData}/>
+        <AboutMe id={'about_me'} data={aboutMeData}/>
         <SkillsSection data={skillsData}/>
-        <ProjectsSection data={projectsData}/>
+        <ProjectsSection id={'projects'} data={projectsData}/>
       </Stack>
     </>
   );

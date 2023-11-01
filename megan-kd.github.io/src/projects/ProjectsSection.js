@@ -21,7 +21,7 @@ const ProjectsSection = (props) => {
   )
   return (
     <>
-        <Stack spacing={2}>
+        <Stack spacing={2} id={'projects'}>
             <Divider>
               <Typography variant='h3'>
                 PROJECTS

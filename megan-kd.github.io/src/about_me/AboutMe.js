@@ -5,7 +5,7 @@ const AboutMe = (props) => {
     const data = props.data;
     return (
         <>
-            <Stack spacing={2}>
+            <Stack spacing={2} id={'about_me'}>
                 <Divider>
                     <Typography variant='h3'>
                         ABOUT ME

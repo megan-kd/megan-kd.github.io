@@ -28,7 +28,7 @@ const SkillsSection = (props) => {
   )
   return (
     <>
-        <Stack>
+        <Stack id={'skills'}>
             <Divider>
               <Typography variant='h3'>
                 SKILLS
