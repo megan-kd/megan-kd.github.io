@@ -39,11 +39,12 @@ const themeOptions = {
       fontFamily: 'Agbalumo',
     },
     h3: {
-      fontFamily: 'Agbalumo',
+      fontFamily: 'Mansalva',
     },
     h4: {
-      fontFamily: 'Agbalumo',
+      fontFamily: 'Mansalva',
     },
+    
   },
   overrides: {
     MuiAppBar: {
