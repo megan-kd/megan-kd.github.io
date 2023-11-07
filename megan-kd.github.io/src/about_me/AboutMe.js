@@ -14,7 +14,7 @@ const AboutMe = (props) => {
                     </Typography>
                 </Divider>
                 <Grid container xs={12} spacing={{ xs: 6, sm: 3 }} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={7} sm={7} md={5}>
+                    <Grid item xs={8.5} sm={7} md={5} style={{paddingLeft: 0}}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
