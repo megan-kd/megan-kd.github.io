@@ -1,7 +1,9 @@
 import { Typography, Stack, Divider, Card, Grid, CardMedia, Button } from '@mui/material'
-import React from 'react'
+import React from 'react';
+import { Link } from "react-scroll";
 
 const AboutMe = (props) => {
+    const appBarOffset = -70;
     const data = props.data;
     return (
         <>
@@ -23,8 +25,10 @@ const AboutMe = (props) => {
                                 />
                             </Card>
                             <Stack direction={'row'} spacing={2} justifyContent={'center'}>
+                                <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
+                                    <Button>Let's Connect!</Button>
+                                </Link>
                                 <Button>Check out my Resume!</Button>
-                                <Button>Let's Connect!</Button>
                             </Stack>
                         </Stack>
                     </Grid>
