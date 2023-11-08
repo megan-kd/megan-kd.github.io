@@ -20,6 +20,17 @@ const Skill = (props) => {
     boxShadow: 'none !important'
   };
 
+  const ulStyle = {
+      textAlign: 'left',
+      listStylePosition: 'inside',
+      display: 'inline-block'
+  };
+
+  const h5Style = {
+    width: '100%',
+    textAlign: 'center'
+  };
+
   const bulletList = skillsList.map((skill) => <li>{skill}</li>)
   return (
     <>
@@ -27,8 +38,8 @@ const Skill = (props) => {
         <CardContent>
         <Typography textAlign={"center"}>{iconList[props.icon]}</Typography>
           <Stack spacing={2}>
-            <Typography variant='h4' textAlign={"center"}>{props.title}</Typography>
-            <Typography width={'80%'} textAlign={'left'} padding={'0 10% 0 10%'}><ul>{bulletList}</ul></Typography>
+            <Typography variant='h4' textAlign={"center"} style={{fontVariant: 'small-caps'}}>{props.title}</Typography>
+            <Typography variant='h7' style={h5Style}><ul style={ulStyle}>{bulletList}</ul></Typography>
           </Stack>
         </CardContent>
       </Card>

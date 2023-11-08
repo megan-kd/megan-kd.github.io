@@ -103,7 +103,7 @@ export const skillsData = [
     {
         "title": "Programming",
         "icon": 4,
-        "skillList": ['ReactJS', 'Python', 'C', 'C++', 'SQL', 'HTML', 'CSS', 'Flask', 'Django', 'NodeJS', 'JavaScript', 'Java']
+        "skillList": ['ReactJS', 'Python', 'C/C++', 'SQL', 'HTML', 'CSS', 'Flask, Django', 'NodeJS', 'JavaScript', 'Java']
     },
     {
         "title": "Tools",
@@ -113,7 +113,7 @@ export const skillsData = [
     {
         "title": "Certificates",
         "icon": 2,
-        "skillList": ['AWS Certified Cloud Practitioner (2021)', 'Azure Fundamentals (2022)', 'Azure Data Fundamentals (2023)']
+        "skillList": ['AWS Certified Cloud Practitioner', 'Azure Fundamentals', 'Azure Data Fundamentals']
     },
     {
         "title": "UX Design",
