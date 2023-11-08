@@ -36,7 +36,7 @@ const Skill = (props) => {
         <Typography textAlign={"center"}>{iconList[props.icon]}</Typography>
           <Stack spacing={2}>
             <Typography variant='h3' textAlign={"center"} style={{fontVariant: 'small-caps'}}>{props.title}</Typography>
-            <Typography variant='h5' style={h5Style}><ul style={ulStyle}>{bulletList}</ul></Typography>
+            <Typography variant='h6' style={h5Style}><ul style={ulStyle}>{bulletList}</ul></Typography>
           </Stack>
         </CardContent>
       </Card>
