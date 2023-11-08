@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Toolbar >
                     <Box sx={{ marginRight: "auto" }} >
                         <IconButton color='inherit' onClick={scrollToTop}>
-                            <HomeIcon fontSize='large' />
+                            <HomeIcon sx={{fontSize: '45px' }} />
                         </IconButton>
                     </Box>
                     <Box sx={{ marginLeft: "auto" }}>

@@ -35,7 +35,7 @@ const SkillsSection = (props) => {
               </Typography>
             </Divider>
         </Stack>
-        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 4, md: 8, lg: 12 }} spacing={2}>
+        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 4, md: 8, lg: 12 }} spacing={2} paddingLeft={0}>
           {skillCategories}
         </Grid>
     </>
