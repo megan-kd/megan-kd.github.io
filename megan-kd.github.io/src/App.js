@@ -49,6 +49,13 @@ const themeOptions = {
     h4: {
       fontFamily: 'Mansalva',
     },
+    h6: {
+      color: '#664147',
+      fontWeight: 'bold'
+    },
+    subtitle: {
+      color: '#664147',
+    }
     
   },
   overrides: {

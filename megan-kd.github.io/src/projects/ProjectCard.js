@@ -23,6 +23,7 @@ const ProjectCard = (props) => {
     height: '400px',
     width: '100%',
     background: theme.palette.gradient.pink,
+    borderRadius: '20px'
   };
   
   const [modalOpen, setModalOpen] = useState(false);
@@ -44,7 +45,7 @@ const ProjectCard = (props) => {
         />
         <CardContent>
           <Stack spacing={2}>
-            <Typography variant='h5' textAlign={"center"}>{props.projectTitle}</Typography>
+            <Typography variant='h6' textAlign={"center"}>{props.projectTitle}</Typography>
             <Typography width='100%' variant='subtitle'textAlign={"center"}>{props.projectSubtitle}</Typography>
           </Stack>
         </CardContent>
