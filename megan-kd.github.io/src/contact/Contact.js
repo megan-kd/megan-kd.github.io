@@ -6,7 +6,7 @@ const Contact = () => {
         <>
             <Stack spacing={2} id={'contact'}>
                 <Divider>
-                    <Typography variant='h3'>
+                    <Typography variant='h2'>
                         CONTACT
                     </Typography>
                 </Divider>

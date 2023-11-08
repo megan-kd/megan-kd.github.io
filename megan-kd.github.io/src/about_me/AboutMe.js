@@ -9,7 +9,7 @@ const AboutMe = (props) => {
         <>
             <Stack spacing={2} id={'about_me'}>
                 <Divider>
-                    <Typography variant='h3'>
+                    <Typography variant='h2'>
                         ABOUT ME
                     </Typography>
                 </Divider>

@@ -25,10 +25,14 @@ const themeOptions = {
     },
     text: {
       primary: '#664147',
-      secondary: '#664147',
+      secondary: '#58383E', //'#664147', 
       disabled: '#605b5b',
       hint: '#664147',
     },
+    gradient: {
+      green: 'linear-gradient(45deg, #A3F7B5 30%, #40C9A2 80%)',
+      pink: 'linear-gradient(45deg, #FAD4DA 30%, #FE7694 90%)',
+    }
   },
   typography: {
     fontFamily: 'Roboto Mono',
@@ -36,10 +40,11 @@ const themeOptions = {
       fontFamily: 'Agbalumo',
     },
     h2: {
-      fontFamily: 'Agbalumo',
+      fontFamily: 'Mansalva',
     },
     h3: {
       fontFamily: 'Mansalva',
+      fontWeight: 'bold'
     },
     h4: {
       fontFamily: 'Mansalva',

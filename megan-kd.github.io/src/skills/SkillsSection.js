@@ -31,7 +31,7 @@ const SkillsSection = (props) => {
     <>
         <Stack id={'skills'}>
             <Divider>
-              <Typography variant='h3'>
+              <Typography variant='h2'>
                 SKILLS
               </Typography>
             </Divider>

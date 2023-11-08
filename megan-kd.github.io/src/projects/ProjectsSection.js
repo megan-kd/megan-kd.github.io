@@ -23,7 +23,7 @@ const ProjectsSection = (props) => {
     <>
         <Stack spacing={2} id={'projects'}>
             <Divider>
-              <Typography variant='h3'>
+              <Typography variant='h2'>
                 PROJECTS
               </Typography>
             </Divider>

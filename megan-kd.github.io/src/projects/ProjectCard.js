@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Card from '@mui/material/Card';
 import { CardContent, CardMedia, Modal, Typography, Box, Stack } from '@mui/material';
+import { useTheme } from '@mui/material';
 
 const modalStyle = {
   position: 'absolute',
@@ -16,12 +17,14 @@ const modalStyle = {
   p: 4,
 };
 
-const projectCardStyle = {
-  height: '400px',
-  width: '100%'
-};
-
 const ProjectCard = (props) => {
+  const theme = useTheme();
+  const projectCardStyle = {
+    height: '400px',
+    width: '100%',
+    background: theme.palette.gradient.pink,
+  };
+  
   const [modalOpen, setModalOpen] = useState(false);
   const handleOpen = () => {
     setModalOpen(true);
