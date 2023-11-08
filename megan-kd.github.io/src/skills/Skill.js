@@ -17,10 +17,6 @@ const Skill = (props) => {
     4: <CodeIcon sx={{ color: theme.palette.primary.main, fontSize: iconFontSize }}/>
   }
 
-  const cardStyle = {
-    boxShadow: 'none !important'
-  };
-
   const ulStyle = {
       textAlign: 'left',
       listStylePosition: 'inside',
@@ -35,7 +31,7 @@ const Skill = (props) => {
   const bulletList = skillsList.map((skill) => <li>{skill}</li>)
   return (
     <>
-      <Card id={'testBoxShadow'}style={cardStyle}>
+      <Card id={'testBoxShadow'} elevation={0}>
         <CardContent>
         <Typography textAlign={"center"}>{iconList[props.icon]}</Typography>
           <Stack spacing={2}>

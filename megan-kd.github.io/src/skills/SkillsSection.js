@@ -10,14 +10,15 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   width: '100%',
   height: 'auto',
-  boxShadow: 'none',
+  boxShadow: 'none !important',
+  border: 'none !important'
 }));
 
 const SkillsSection = (props) => {
   const skillsData = props.data;
   const skillCategories = skillsData.map((category) => 
-  <Grid item xs={3}>
-      <Item elevation={0}>
+  <Grid item xs={3} id='IMJOKIN' >
+      <Item id='GIMMEDAT'>
         <Skill
           title={category.title}
           list={category.skillList}
@@ -35,7 +36,7 @@ const SkillsSection = (props) => {
               </Typography>
             </Divider>
         </Stack>
-        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 4, md: 8, lg: 12 }} spacing={2} paddingLeft={0}>
+        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 4, md: 4, lg: 12 }}>
           {skillCategories}
         </Grid>
     </>
