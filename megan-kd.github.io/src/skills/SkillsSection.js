@@ -6,18 +6,18 @@ import Paper from '@mui/material/Paper';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(0),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  width: '100%'
+  width: '100%',
+  height: 'auto',
+  boxShadow: 'none',
 }));
 
 const SkillsSection = (props) => {
   const skillsData = props.data;
   const skillCategories = skillsData.map((category) => 
   <Grid item xs={3}>
-      <Item>
+      <Item elevation={0}>
         <Skill
           title={category.title}
           list={category.skillList}
@@ -35,7 +35,7 @@ const SkillsSection = (props) => {
               </Typography>
             </Divider>
         </Stack>
-        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container justifyContent={'center'} columns={{ xs: 4, sm: 4, md: 8, lg: 12 }} spacing={2}>
           {skillCategories}
         </Grid>
     </>

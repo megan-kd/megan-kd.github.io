@@ -32,7 +32,7 @@ const AboutMe = (props) => {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={11} sm={11} md={6} >
+                    <Grid item xs={11} sm={11} md={6} style={{paddingLeft: '15px'}}>
                         <Typography sx>{data}</Typography>
                     </Grid>
                 </Grid>
