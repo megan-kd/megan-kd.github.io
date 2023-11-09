@@ -85,6 +85,28 @@ const themeOptions = {
         },
       },
     },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          borderRadius: 30,
+        }
+      }
+    },
+    MuiDialogContent: {
+      styleOverrides: {
+        root: {
+          padding: '0 30px 30px 30px',
+        }
+      }
+    },
+    MuiDialogTitle: {
+      styleOverrides: {
+        root: {
+          padding: '25px 30px 16px 30px',
+          textAlign: 'center'
+        }
+      }
+    }
   },
 };
 

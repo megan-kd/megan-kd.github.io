@@ -1,31 +1,28 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, Modal, Typography, Box, Stack } from '@mui/material';
+import { CardContent, CardMedia, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton} from '@mui/material';
 import { useTheme } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
-const modalStyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  maxHeight: '60%',
-  overflow:'scroll',
-  width: '60%',
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const ProjectCard = (props) => {
   const theme = useTheme();
   const projectCardStyle = {
-    height: '400px',
+    height: '420px',
     width: '100%',
     background: theme.palette.gradient.pink,
     borderRadius: '20px'
   };
-  
+
+  const DialogTitleStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  };
+
   const [modalOpen, setModalOpen] = useState(false);
   const handleOpen = () => {
     setModalOpen(true);
@@ -46,23 +43,30 @@ const ProjectCard = (props) => {
         <CardContent>
           <Stack spacing={2}>
             <Typography variant='h6' textAlign={"center"}>{props.projectTitle}</Typography>
-            <Typography width='100%' variant='subtitle'textAlign={"center"}>{props.projectSubtitle}</Typography>
+            <Typography width='100%' variant='subtitle' textAlign={"center"}>{props.projectSubtitle}</Typography>
           </Stack>
         </CardContent>
       </Card>
-      <Modal
+      <Dialog
         open={modalOpen}
         onClose={handleClose}
+        TransitionComponent={Transition}
+        maxWidth={"md"}
       >
-        <Box sx={modalStyle}>
+        <DialogTitle disableTypography style={DialogTitleStyle}>
+          <Typography variant='h5' fontWeight={'bold'}>{props.projectTitle}</Typography>
+          <IconButton onClick={handleClose}>
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent>
           <Stack>
-            <Typography variant='h5'>{props.projectTitle}</Typography>
             <Typography>{props.projectDescription}</Typography>
             <Typography variant='h8'>Date: {props.projectDate}</Typography>
             <Typography variant='h8'>Technologies: {props.projectTechnologies}</Typography>
           </Stack>
-        </Box>
-      </Modal>
+        </DialogContent>
+      </Dialog>
     </>
   )
 }
