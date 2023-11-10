@@ -16,6 +16,9 @@ const themeOptions = {
     primary: {
       main: '#2f9c95',
     },
+    default: {
+      main: '#664147',
+    },
     secondary: {
       main: '#EE6C82',
     },
