@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton} from '@mui/material';
+import { CardContent, CardMedia, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -62,7 +63,13 @@ const ProjectCard = (props) => {
         <DialogContent>
           <Stack>
             <Typography>{props.projectDescription}</Typography>
-            <Typography variant='h8'>Date: {props.projectDate}</Typography>
+            <Typography variant='h8'>
+              <Stack direction={'horizontal'}>
+                <CalendarMonthIcon />
+                <div>{':'}&nbsp;</div>
+                {props.projectDate}
+              </Stack>
+            </Typography>
             <Typography variant='h8'>Technologies: {props.projectTechnologies}</Typography>
           </Stack>
         </DialogContent>
