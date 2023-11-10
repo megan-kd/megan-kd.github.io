@@ -7,11 +7,11 @@ import { useTheme } from '@mui/material';
 const Contact = () => {
     const theme = useTheme();
     const paperStyle = {
-        backgroundImage: "url('/cherryblossom1.avif')",
+        backgroundImage: "url('/cherryblossom75.avif')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        minHeight: '600px'
+        maxHeight: '400px',
     };
 
     const iconStyle = {
@@ -20,30 +20,39 @@ const Contact = () => {
     };
 
     const iconButtonStyle = {
-        color: theme.palette.text.primary,
-        "&:hover": { 
-            color: "#492F33",
+        color: "#492F33",
+        "&:hover": {
+            color: theme.palette.text.primary,
             background: 'none'
-        }
+        },
     };
+
+    const contactTitleStyle = {
+        fontVariant: 'small-caps',
+        fontSize: '10vw'
+    }
 
     return (
         <>
-            <Stack spacing={2} id={'contact'}>
-                <Divider>
-                    <Typography variant='h2'>
-                        CONTACT
-                    </Typography>
-                </Divider>
-                <Paper style={paperStyle} elevation={0} square={true}>
-                        <Stack direction={'horizontal'}>
-                            <IconButton sx={iconButtonStyle}>
-                                <GitHubIcon style={iconStyle}/>
+            <Stack spacing={2} id={'contact'} >
+                <Paper style={paperStyle} elevation={0} square={true} maxHeight={'400px'}>
+                    <Grid item xs={12} display={'flex'} justifyContent={'center'}>
+                        <Typography variant='h2' style={contactTitleStyle}>
+                            {"Let's Connect!"}
+                        </Typography>
+                    </Grid>
+                    <Grid container spacing={{ xs: 2 }} columns={{ xs: 6, sm: 8, md: 12 }} minHeight={600} justifyContent={'center'}>
+                        <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+                            `<IconButton sx={iconButtonStyle}>
+                                <GitHubIcon style={iconStyle} />
                             </IconButton>
+                        </Grid>
+                        <Grid item xs={3} display={"flex"} justifyContent={"center"}>
                             <IconButton sx={iconButtonStyle}>
-                                <LinkedInIcon style={iconStyle}/>
+                                <LinkedInIcon style={iconStyle} />
                             </IconButton>
-                        </Stack>
+                        </Grid>
+                    </Grid>
                 </Paper>
             </Stack>
         </>
