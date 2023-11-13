@@ -7,16 +7,16 @@ import { useTheme } from '@mui/material';
 const Contact = () => {
     const theme = useTheme();
     const paperStyle = {
-        backgroundImage: "url('/cherryblossom75.avif')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        maxHeight: '400px',
+        //backgroundImage: "url('/cherryblossom75.avif')",
+        //backgroundRepeat: "no-repeat",
+        //backgroundSize: "cover",
+        ///backgroundPosition: "center center",
+        maxHeight: '324px',
+        backgroundColor: theme.palette.background.pink
     };
 
     const iconStyle = {
-        fontSize: "20vw",
-        boxShadow: '5px 10px 30px'
+        fontSize: "10vw",
     };
 
     const iconButtonStyle = {
@@ -25,30 +25,33 @@ const Contact = () => {
             color: theme.palette.text.primary,
             background: 'none'
         },
+        height: '10vw',
     };
 
     const contactTitleStyle = {
         fontVariant: 'small-caps',
-        fontSize: '10vw'
-    }
+        fontSize: '5vw',
+        paddingTop: '15px'
+    };
+
 
     return (
         <>
-            <Stack spacing={2} id={'contact'} >
-                <Paper style={paperStyle} elevation={0} square={true} maxHeight={'400px'}>
+            <Stack spacing={2} id={'contact'}>
+                <Paper style={paperStyle} elevation={0} square={true}>
                     <Grid item xs={12} display={'flex'} justifyContent={'center'}>
                         <Typography variant='h2' style={contactTitleStyle}>
                             {"Let's Connect!"}
                         </Typography>
                     </Grid>
-                    <Grid container spacing={{ xs: 2 }} columns={{ xs: 6, sm: 8, md: 12 }} minHeight={600} justifyContent={'center'}>
+                    <Grid container spacing={{ xs: 2 }} columns={{ xs: 6, sm: 8, md: 12 }} justifyContent={'center'} >
                         <Grid item xs={3} display={"flex"} justifyContent={"center"}>
-                            `<IconButton sx={iconButtonStyle}>
+                            `<IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://github.com/megan-kd" target="_blank">
                                 <GitHubIcon style={iconStyle} />
                             </IconButton>
                         </Grid>
                         <Grid item xs={3} display={"flex"} justifyContent={"center"}>
-                            <IconButton sx={iconButtonStyle}>
+                            <IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://www.linkedin.com/in/megan-kcd/" target="_blank">
                                 <LinkedInIcon style={iconStyle} />
                             </IconButton>
                         </Grid>

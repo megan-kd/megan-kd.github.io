@@ -25,6 +25,7 @@ const themeOptions = {
     background: {
       default: '#e5f9e0',
       paper: '#e5f9e0',
+      pink: '#FAD4DA'
     },
     text: {
       primary: '#664147',
