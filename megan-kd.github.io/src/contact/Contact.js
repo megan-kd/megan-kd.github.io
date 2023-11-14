@@ -16,7 +16,7 @@ const Contact = () => {
     };
 
     const iconStyle = {
-        fontSize: "10vw",
+        fontSize: "45px",
     };
 
     const iconButtonStyle = {
@@ -25,12 +25,12 @@ const Contact = () => {
             color: theme.palette.text.primary,
             background: 'none'
         },
-        height: '10vw',
+        height: '60px',
     };
 
     const contactTitleStyle = {
         fontVariant: 'small-caps',
-        fontSize: '5vw',
+        //fontSize: '5vw',
         paddingTop: '15px'
     };
 
@@ -44,13 +44,13 @@ const Contact = () => {
                             {"Let's Connect!"}
                         </Typography>
                     </Grid>
-                    <Grid container spacing={{ xs: 2 }} columns={{ xs: 6, sm: 8, md: 12 }} justifyContent={'center'} >
-                        <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+                    <Grid container columns={{ xs: 6, sm: 8, md: 12 }} justifyContent={'center'} >
+                        <Grid item xs={1} display={"flex"} justifyContent={"center"}>
                             `<IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://github.com/megan-kd" target="_blank">
                                 <GitHubIcon style={iconStyle} />
                             </IconButton>
                         </Grid>
-                        <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+                        <Grid item xs={1} display={"flex"} justifyContent={"center"}>
                             <IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://www.linkedin.com/in/megan-kcd/" target="_blank">
                                 <LinkedInIcon style={iconStyle} />
                             </IconButton>

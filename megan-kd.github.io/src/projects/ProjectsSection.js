@@ -30,6 +30,8 @@ const ProjectsSection = (props) => {
             <Grid container spacing={{ xs: 3, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} minHeight={600}>
                 {cards}
             </Grid>
+            <div/>
+            <div/>
         </Stack>
     </>
   )
