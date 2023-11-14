@@ -12,10 +12,11 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const ProjectCard = (props) => {
   const theme = useTheme();
   const projectCardStyle = {
+    //height: '450px',
     height: '420px',
     width: '100%',
     background: theme.palette.gradient.pink,
-    borderRadius: '20px'
+    borderRadius: '20px',
   };
 
   const DialogTitleStyle = {
@@ -37,12 +38,12 @@ const ProjectCard = (props) => {
       <Card raised onClick={handleOpen} style={projectCardStyle}>
         <CardMedia
           component={"img"}
-          sx={{ height: '60%', objectFit: "contain" }}
+          sx={{ height: '60%', objectFit: "contain",  }}
           image={props.projectImagePath}
           title={props.imageTitle}
         />
         <CardContent>
-          <Stack spacing={2}>
+          <Stack spacing={1}>
             <Typography variant='h6' textAlign={"center"}>{props.projectTitle}</Typography>
             <Typography width='100%' variant='subtitle' textAlign={"center"}>{props.projectSubtitle}</Typography>
           </Stack>

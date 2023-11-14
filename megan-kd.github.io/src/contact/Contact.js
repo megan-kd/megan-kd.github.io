@@ -12,7 +12,8 @@ const Contact = () => {
         //backgroundSize: "cover",
         ///backgroundPosition: "center center",
         maxHeight: '324px',
-        backgroundColor: theme.palette.background.pink
+        backgroundColor: theme.palette.background.pink,
+        paddingBottom: '15px'
     };
 
     const iconStyle = {

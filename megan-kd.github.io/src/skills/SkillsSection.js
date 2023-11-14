@@ -17,8 +17,8 @@ const Item = styled(Paper)(({ theme }) => ({
 const SkillsSection = (props) => {
   const skillsData = props.data;
   const skillCategories = skillsData.map((category) => 
-  <Grid item xs={3} id='IMJOKIN' >
-      <Item id='GIMMEDAT'>
+  <Grid item xs={3} >
+      <Item>
         <Skill
           title={category.title}
           list={category.skillList}

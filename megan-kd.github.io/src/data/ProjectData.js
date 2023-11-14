@@ -56,7 +56,7 @@ export const projectsData = [
         technologies: "Python, C#"
     },
     {
-        title: "Bluetooth SIG Compliance: Firmware Testing Tool Suite",
+        title: "Bluetooth SIG Compliance Tool Suite",
         subtitle: "Python Scripting, Test Automation, Automated Reporting",
         imagePath: "/bluetoothsig.png",
         imageTitle: "image 3",
