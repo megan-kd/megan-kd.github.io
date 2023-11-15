@@ -27,7 +27,7 @@ const ProjectsSection = (props) => {
                 PROJECTS
               </Typography>
             </Divider>
-            <Grid container spacing={{ xs: 2, md: 3, lg: 4}} columns={{ xs: 4, sm: 8, md: 12 }} minHeight={600}>
+            <Grid container spacing={{ xs: 2, md: 3, lg: 4}} columns={{ xs: 4, sm: 4, md: 8, lg: 12 }} minHeight={600}>
                 {cards}
             </Grid>
             <div/>

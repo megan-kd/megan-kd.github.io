@@ -2,7 +2,7 @@ export const projectsData = [
     {
         title: "Scenic Routing",
         subtitle: "Computer Networking, Algorithm Design, Open Source",
-        imagePath: "/scenicRouting.png",
+        imagePath: "/projectpics/2.png",
         imageTitle: "image 1",
         description:  <>
         <p>
@@ -32,7 +32,7 @@ export const projectsData = [
     {
         title: "Bluetooth Qualification Results UI",
         subtitle: "Full-stack Development",
-        imagePath: "/logo192.png",
+        imagePath: "/projectpics/1.png",
         imageTitle: "image 2",
         description: <>
             <p>
@@ -45,7 +45,7 @@ export const projectsData = [
     {
         title: "Data Migration Progress Reporting",
         subtitle: "Python Scripting, Automated Reporting",
-        imagePath: "/tempHeatMap.png",
+        imagePath: "/projectpics/5.png",
         imageTitle: "image 3",
         description: <>
             <p>
@@ -58,7 +58,7 @@ export const projectsData = [
     {
         title: "Bluetooth SIG Compliance Tool Suite",
         subtitle: "Python Scripting, Test Automation, Automated Reporting",
-        imagePath: "/bluetoothsig.png",
+        imagePath: "/projectpics/3.png",
         imageTitle: "image 3",
         description: <>
             <p>
@@ -83,7 +83,7 @@ export const projectsData = [
     {
         title: "Data Accelerator UI",
         subtitle: "Full-stack Development, Azure Data Factory, Informatica",
-        imagePath: "/adf.png",
+        imagePath: "/projectpics/4.png",
         imageTitle: "image 3",
         description: <>
             <p>

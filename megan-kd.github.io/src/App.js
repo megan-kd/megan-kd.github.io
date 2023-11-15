@@ -110,6 +110,19 @@ const themeOptions = {
           textAlign: 'center'
         }
       }
+    },
+    MuiCard: {
+      variants: [
+        {
+          props: {variant: 'clickable'},
+          style: {
+            "&:hover": {
+              cursor: "pointer",
+              boxShadow: '10px 5px #2f9c95',
+            }
+          }
+        }
+      ]
     }
   },
 };

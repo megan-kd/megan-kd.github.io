@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton } from '@mui/material';
+import { CardContent, CardMedia, CardHeader, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton, CardActions } from '@mui/material';
 import { useTheme } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -13,16 +13,34 @@ const ProjectCard = (props) => {
   const theme = useTheme();
   const projectCardStyle = {
     //height: '450px',
-    height: '420px',
+    height: '450px',
     width: '100%',
-    background: theme.palette.gradient.pink,
+    background: theme.palette.text.primary,
     borderRadius: '20px',
+    "&:hover": {
+      cursor: 'pointer !important'
+  },
   };
 
   const DialogTitleStyle = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center'
+  };
+
+  const cardMediaStyle = {
+    height: '65%',
+    objectFit: 'fill',
+  };
+
+  const cardTitleStyle = {
+    textAlign: 'center',
+    color: theme.palette.background.pink,
+    backgroundColor: theme.palette.text.primary
+  }
+
+  const cardContentStyle = {
+    backgroundColor: theme.palette.text.primary,
   };
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -35,17 +53,20 @@ const ProjectCard = (props) => {
 
   return (
     <>
-      <Card raised onClick={handleOpen} style={projectCardStyle}>
+      <Card raised onClick={handleOpen} style={projectCardStyle} variant='clickable'>
+        <CardHeader
+          style={cardTitleStyle}
+          title={<Typography width='100%' variant='h6' style={cardTitleStyle}>{props.projectTitle}</Typography>}
+        />
         <CardMedia
           component={"img"}
-          sx={{ height: '60%', objectFit: "contain",  }}
+          sx={cardMediaStyle}
           image={props.projectImagePath}
           title={props.imageTitle}
         />
-        <CardContent>
+        <CardContent style={cardContentStyle}>
           <Stack spacing={1}>
-            <Typography variant='h6' textAlign={"center"}>{props.projectTitle}</Typography>
-            <Typography width='100%' variant='subtitle' textAlign={"center"}>{props.projectSubtitle}</Typography>
+            <Typography width='100%' variant='subtitle' style={cardTitleStyle}>{props.projectSubtitle}</Typography>
           </Stack>
         </CardContent>
       </Card>
