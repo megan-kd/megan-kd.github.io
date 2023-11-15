@@ -8,6 +8,16 @@ const AboutMe2 = (props) => {
     const resumeOnClick = () => {
         window.open('/megandeyoung_resume_10_2023.pdf', '_blank');
     };
+
+    const imgStyle = {
+        float: 'left',
+        paddingLeft: 0
+    };
+
+    const textStyle = {
+        paddingLeft: '15px'
+    };
+
     return (
         <>
             <Stack spacing={2} id={'about_me'}>
@@ -16,8 +26,8 @@ const AboutMe2 = (props) => {
                         ABOUT ME
                     </Typography>
                 </Divider>
-                <Grid container xs={12} spacing={{ xs: 6, sm: 3 }} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={8.5} sm={7} md={5} style={{paddingLeft: 0}} zeroMinWidth>
+                <Grid container xs={12} spacing={{ xs: 6, sm: 3}} justifyContent={'center'} alignItems={'stretch'}>
+                    <Grid item xs={8.5} sm={7} md={5} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
@@ -31,11 +41,11 @@ const AboutMe2 = (props) => {
                                 <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
                                     <Button>Let's Connect!</Button>
                                 </Link>
-                                <Button onClick={resumeOnClick}>Check out my Resume!</Button>
+                                 <Button onClick={resumeOnClick}>Check out my Resume!</Button>
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={11} sm={11} md={6} style={{paddingLeft: '15px'}} zeroMinWidth>
+                    <Grid item xs={11} sm={11} md={6} style={textStyle} zeroMinWidth>
                         <Typography sx>{data}</Typography>
                     </Grid>
                 </Grid>

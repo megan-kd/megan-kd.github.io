@@ -30,7 +30,8 @@ const ProjectCard = (props) => {
 
   const cardMediaStyle = {
     height: '65%',
-    objectFit: 'fill',
+    objectFit: 'contain',
+    textAlign: 'center'
   };
 
   const cardTitleStyle = {

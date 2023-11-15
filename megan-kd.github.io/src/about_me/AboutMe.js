@@ -5,6 +5,10 @@ import { Link } from "react-scroll";
 const AboutMe = (props) => {
     const appBarOffset = -70;
     const data = props.data;
+    const resumeOnClick = () => {
+        window.open('/megandeyoung_resume_10_2023.pdf', '_blank');
+    };
+
     return (
         <>
             <Stack spacing={2} id={'about_me'}>
@@ -28,7 +32,7 @@ const AboutMe = (props) => {
                                 <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
                                     <Button>Let's Connect!</Button>
                                 </Link>
-                                <Button>Check out my Resume!</Button>
+                                 <Button onClick={resumeOnClick}>Check out my Resume!</Button>
                             </Stack>
                         </Stack>
                     </Grid>
