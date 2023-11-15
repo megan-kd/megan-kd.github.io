@@ -9,6 +9,7 @@ import AboutMe from './about_me/AboutMe';
 import Contact from './contact/Contact';
 import { createTheme, ThemeProvider} from "@mui/material/styles";
 import {CssBaseline} from '@mui/material';
+import AboutMe2 from './about_me/AboutMe2';
 
 const themeOptions = {
   palette: {
@@ -136,7 +137,7 @@ function App() {
         <CssBaseline enableColorScheme/>
         <Stack spacing={2}>
           <Navbar />
-          <AboutMe data={aboutMeData} />
+          <AboutMe2 data={aboutMeData} />
           <SkillsSection data={skillsData} />
           <ProjectsSection data={projectsData} />
           <Contact />
