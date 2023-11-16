@@ -41,7 +41,7 @@ const themeOptions = {
   typography: {
     fontFamily: 'Roboto Mono',
     h1: {
-      fontFamily: 'Agbalumo',
+      fontFamily: 'Mansalva',
     },
     h2: {
       fontFamily: 'Mansalva',
