@@ -63,6 +63,7 @@ const ProjectCard = (props) => {
           sx={cardMediaStyle}
           image={props.projectImagePath}
           title={props.imageTitle}
+          loading="lazy"
         />
         <CardContent style={cardContentStyle}>
           <Stack spacing={1}>
