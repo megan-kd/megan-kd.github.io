@@ -9,6 +9,7 @@ import AboutMe from './about_me/AboutMe';
 import Contact from './contact/Contact';
 import { createTheme, ThemeProvider} from "@mui/material/styles";
 import {CssBaseline} from '@mui/material';
+import './font.css';
 
 const themeOptions = {
   palette: {
@@ -39,7 +40,6 @@ const themeOptions = {
     }
   },
   typography: {
-    fontDisplay: 'swap',
     fontFamily: 'Roboto Mono',
     h1: {
       fontFamily: 'Mansalva',
@@ -55,6 +55,7 @@ const themeOptions = {
       fontFamily: 'Mansalva',
     },
     h6: {
+      fontFamily: 'Roboto Mono',
       color: '#664147',
       fontWeight: 'bold'
     },
@@ -62,6 +63,7 @@ const themeOptions = {
       color: '#664147',
     },
     body2: {
+      fontFamily: 'Roboto Mono',
       fontSize: '15px'
     },
     
