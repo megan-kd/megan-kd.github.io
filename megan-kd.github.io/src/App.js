@@ -60,7 +60,10 @@ const themeOptions = {
     },
     subtitle: {
       color: '#664147',
-    }
+    },
+    body2: {
+      fontSize: '15px'
+    },
     
   },
   overrides: {

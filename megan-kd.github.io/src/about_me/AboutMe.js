@@ -9,6 +9,8 @@ const AboutMe = (props) => {
         window.open('/megandeyoung_resume_10_2023.pdf', '_blank');
     };
 
+    //900  1200
+
     return (
         <>
             <Stack spacing={2} id={'about_me'}>
@@ -17,8 +19,8 @@ const AboutMe = (props) => {
                         ABOUT ME
                     </Typography>
                 </Divider>
-                <Grid container xs={12} spacing={{ xs: 6, sm: 3 }} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={8.5} sm={7} md={5} style={{paddingLeft: 0}} zeroMinWidth>
+                <Grid container xs={12} lg={7} spacing={{ xs: 6, sm: 3 }} justifyContent={'center'} alignItems={'stretch'}>
+                    <Grid item xs={8.5} sm={7} md={7} lg={7} style={{paddingLeft: 0}} zeroMinWidth>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia

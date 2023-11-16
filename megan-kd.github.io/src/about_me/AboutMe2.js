@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from "react-scroll";
 
 const AboutMe2 = (props) => {
+    // 900px and above
     const appBarOffset = -70;
     const data = props.data;
     const resumeOnClick = () => {
@@ -11,11 +12,12 @@ const AboutMe2 = (props) => {
 
     const imgStyle = {
         float: 'left',
-        paddingLeft: 0
+        paddingLeft: '10px'
     };
 
     const textStyle = {
-        paddingLeft: '15px'
+        paddingLeft: '15px',
+        display: 'inline-flex !important'
     };
 
     return (
@@ -27,7 +29,7 @@ const AboutMe2 = (props) => {
                     </Typography>
                 </Divider>
                 <Grid container xs={12} spacing={{ xs: 6, sm: 3}} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={8.5} sm={7} md={5} style={imgStyle}>
+                    <Grid item xs={8.5} sm={7} md={6} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
@@ -45,8 +47,8 @@ const AboutMe2 = (props) => {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={11} sm={11} md={6} style={textStyle} zeroMinWidth>
-                        <Typography sx>{data}</Typography>
+                    <Grid item xs={11} sm={11} md={11} lg={7} xl={7} style={textStyle}>
+                        <Typography sx={{wordBreak: 'break-word'}} variant='body2'>{data}</Typography>
                     </Grid>
                 </Grid>
             </Stack>
