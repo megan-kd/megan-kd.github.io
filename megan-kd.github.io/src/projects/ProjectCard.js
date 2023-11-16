@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, CardHeader, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton, CardActions } from '@mui/material';
+import { CardContent, CardMedia, CardHeader, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -12,7 +12,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const ProjectCard = (props) => {
   const theme = useTheme();
   const projectCardStyle = {
-    //height: '450px',
     height: '450px',
     width: '100%',
     background: theme.palette.text.primary,

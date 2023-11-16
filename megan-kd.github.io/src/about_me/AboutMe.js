@@ -9,7 +9,15 @@ const AboutMe = (props) => {
         window.open('/megandeyoung_resume_10_2023.pdf', '_blank');
     };
 
-    //900  1200
+    const imgStyle = {
+        float: 'left',
+        paddingLeft: '10px'
+    };
+
+    const textStyle = {
+        paddingLeft: '15px',
+        display: 'inline-flex !important'
+    };
 
     return (
         <>
@@ -19,8 +27,8 @@ const AboutMe = (props) => {
                         ABOUT ME
                     </Typography>
                 </Divider>
-                <Grid container xs={12} lg={7} spacing={{ xs: 6, sm: 3 }} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={8.5} sm={7} md={7} lg={7} style={{paddingLeft: 0}} zeroMinWidth>
+                <Grid container xs={12} spacing={{ xs: 6, sm: 3}} justifyContent={'center'} alignItems={'stretch'}>
+                    <Grid item xs={8.5} sm={7} md={6} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
@@ -38,8 +46,8 @@ const AboutMe = (props) => {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={11} sm={11} md={6} style={{paddingLeft: '15px'}} zeroMinWidth>
-                        <Typography sx>{data}</Typography>
+                    <Grid item xs={11} sm={11} md={11} lg={7} xl={7} style={textStyle}>
+                        <Typography sx={{wordBreak: 'break-word'}} variant='body2'>{data}</Typography>
                     </Grid>
                 </Grid>
             </Stack>
