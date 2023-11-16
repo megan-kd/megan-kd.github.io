@@ -39,6 +39,7 @@ const themeOptions = {
     }
   },
   typography: {
+    fontDisplay: 'swap',
     fontFamily: 'Roboto Mono',
     h1: {
       fontFamily: 'Mansalva',
