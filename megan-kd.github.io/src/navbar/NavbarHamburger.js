@@ -25,7 +25,7 @@ const NavbarHamburger = () => {
         <AppBar position='sticky'>
             <Toolbar>
                 <Box sx={{ marginRight: "auto" }}>
-                    <IconButton color='inherit' onClick={scrollToTop}>
+                    <IconButton color='inherit' onClick={scrollToTop} aria-label={'Scroll to Top'}>
                         <HomeIcon sx={{ fontSize: '45px' }} />
                     </IconButton>
                 </Box>
@@ -34,6 +34,7 @@ const NavbarHamburger = () => {
                         <IconButton
                             onClick={handleClick}
                             color='inherit'
+                            aria-label={'Navigation Menu'}
                         >
                             <MenuIcon sx={{ fontSize: '45px' }} />
                         </IconButton>
@@ -47,22 +48,22 @@ const NavbarHamburger = () => {
                             }}
                         >
                             <MenuItem onClick={handleClose}>
-                                <Link to="about_me" spy={true} smooth={true} offset={appBarOffset} duration={500}>
+                                <Link to="about_me" spy={true} smooth={true} offset={appBarOffset} duration={500} aria-label={'About Me'}>
                                     About Me
                                 </Link>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <Link to="skills" spy={true} smooth={true} offset={appBarOffset} duration={500}>
+                                <Link to="skills" spy={true} smooth={true} offset={appBarOffset} duration={500} aria-label={'Skills'}>
                                     Skills
                                 </Link>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <Link to="projects" spy={true} smooth={true} offset={appBarOffset} duration={500}>
+                                <Link to="projects" spy={true} smooth={true} offset={appBarOffset} duration={500} aria-label={'Projects'}>
                                     Projects
                                 </Link>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
+                                <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500} aria-label={'Contact'}>
                                     Contact
                                 </Link>
                             </MenuItem>

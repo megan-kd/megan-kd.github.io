@@ -47,12 +47,12 @@ const Contact = () => {
                     </Grid>
                     <Grid container columns={{ xs: 6, sm: 8, md: 12 }} justifyContent={'center'} >
                         <Grid item xs={1} display={"flex"} justifyContent={"center"}>
-                            <IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://github.com/megan-kd" target="_blank">
+                            <IconButton sx={iconButtonStyle} aria-label={'github'} rel="noopener noreferrer" href="https://github.com/megan-kd" target="_blank">
                                 <GitHubIcon style={iconStyle} />
                             </IconButton>
                         </Grid>
                         <Grid item xs={1} display={"flex"} justifyContent={"center"}>
-                            <IconButton sx={iconButtonStyle} rel="noopener noreferrer" href="https://www.linkedin.com/in/megan-kcd/" target="_blank">
+                            <IconButton sx={iconButtonStyle} aria-label={'LinkedIn'} rel="noopener noreferrer" href="https://www.linkedin.com/in/megan-kcd/" target="_blank">
                                 <LinkedInIcon style={iconStyle} />
                             </IconButton>
                         </Grid>

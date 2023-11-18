@@ -45,9 +45,9 @@ const AboutMe = (props) => {
                             </Card>
                             <Stack direction={'row'} spacing={2} justifyContent={'center'} sx={{padding: '0 10px 0 10px'}}>
                                 <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
-                                    <Button size={mobileSize ? 'small' : 'medium'}>Let's Connect!</Button>
+                                    <Button size={mobileSize ? 'small' : 'medium'} aria-label={'Contact'}>Let's Connect!</Button>
                                 </Link>
-                                 <Button size={mobileSize ? 'small' : 'medium'} onClick={resumeOnClick}>Check out my Resume!</Button>
+                                 <Button size={mobileSize ? 'small' : 'medium'} onClick={resumeOnClick} aria-label={'Check out my resume!'}>Check out my Resume!</Button>
                             </Stack>
                         </Stack>
                     </Grid>
