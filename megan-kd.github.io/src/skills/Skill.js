@@ -31,7 +31,7 @@ const Skill = (props) => {
   const bulletList = skillsList.map((skill) => <li>{skill}</li>)
   return (
     <>
-      <Card id={'testBoxShadow'} elevation={0}>
+      <Card elevation={0}>
         <CardContent>
         <Typography textAlign={"center"}>{iconList[props.icon]}</Typography>
           <Stack spacing={2}>
