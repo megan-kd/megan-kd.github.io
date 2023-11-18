@@ -26,7 +26,7 @@ const AboutMe = (props) => {
                         Megan DeYoung
                     </Typography>
                 </Divider>
-                <Grid container xs={12} spacing={{ xs: 3, md: 6, lg: 6}} justifyContent={'center'} alignItems={'stretch'}>
+                <Grid container xs={12} spacing={{ xs: 2, md: 6, lg: 6}} justifyContent={'center'} alignItems={'stretch'}>
                     <Grid item xs={8.5} sm={7} md={6} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >

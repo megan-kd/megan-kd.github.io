@@ -7,11 +7,20 @@ import Navbar from './navbar/Navbar';
 import { Stack } from '@mui/material';
 import AboutMe from './about_me/AboutMe';
 import Contact from './contact/Contact';
-import { createTheme, ThemeProvider} from "@mui/material/styles";
-import {CssBaseline} from '@mui/material';
+import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from '@mui/material';
 import './font.css';
 
 const themeOptions = {
+  breakpoints: {
+    values: {
+      xs: 450,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536
+    }
+  },
   palette: {
     mode: 'light',
     primary: {
@@ -46,6 +55,7 @@ const themeOptions = {
     },
     h2: {
       fontFamily: 'Mansalva',
+      
     },
     h3: {
       fontFamily: 'Mansalva',
@@ -66,7 +76,7 @@ const themeOptions = {
       fontFamily: 'Roboto Mono',
       fontSize: '15px'
     },
-    
+
   },
   overrides: {
     MuiAppBar: {
@@ -82,6 +92,13 @@ const themeOptions = {
     },
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          width: '100%px !important'
+        }
+      }
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -120,7 +137,7 @@ const themeOptions = {
     MuiCard: {
       variants: [
         {
-          props: {variant: 'clickable'},
+          props: { variant: 'clickable' },
           style: {
             "&:hover": {
               cursor: "pointer",
@@ -133,15 +150,15 @@ const themeOptions = {
   },
 };
 
-const customTheme = createTheme(themeOptions);
+const customTheme = responsiveFontSizes(createTheme(themeOptions));
 
 function App() {
   return (
     <>
       <ThemeProvider theme={customTheme}>
-        <CssBaseline enableColorScheme/>
+        <CssBaseline enableColorScheme />
         <Stack spacing={2}>
-          <Navbar />
+          <Navbar/>
           <AboutMe data={aboutMeData} />
           <SkillsSection data={skillsData} />
           <ProjectsSection data={projectsData} />
