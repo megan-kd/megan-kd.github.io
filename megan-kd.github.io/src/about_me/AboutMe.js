@@ -15,7 +15,9 @@ const AboutMe = (props) => {
 
     const textStyle = {
         display: 'inline-flex !important',
-        paddingTop: '0px'
+        paddingTop: '0px',
+        paddingLeft: '15px',
+        paddingRight: '15px',
     };
 
     return (
