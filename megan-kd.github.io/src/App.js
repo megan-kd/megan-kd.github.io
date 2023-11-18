@@ -14,7 +14,7 @@ import './font.css';
 const themeOptions = {
   breakpoints: {
     values: {
-      xs: 450,
+      xs: 490,
       sm: 600,
       md: 900,
       lg: 1200,
