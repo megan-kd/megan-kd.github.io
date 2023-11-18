@@ -1,8 +1,10 @@
 import { Typography, Stack, Divider, Card, Grid, CardMedia, Button } from '@mui/material'
 import React from 'react';
 import { Link } from "react-scroll";
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const AboutMe = (props) => {
+    const theme = useTheme();
     const appBarOffset = -70;
     const data = props.data;
     const resumeOnClick = () => {
@@ -19,6 +21,8 @@ const AboutMe = (props) => {
         paddingLeft: '15px',
         paddingRight: '15px',
     };
+
+    const mobileSize = useMediaQuery(theme.breakpoints.up('xs'));
 
     return (
         <>
@@ -41,9 +45,9 @@ const AboutMe = (props) => {
                             </Card>
                             <Stack direction={'row'} spacing={2} justifyContent={'center'} sx={{padding: '0 10px 0 10px'}}>
                                 <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
-                                    <Button size='small'>Let's Connect!</Button>
+                                    <Button size={mobileSize ? 'small' : 'medium'}>Let's Connect!</Button>
                                 </Link>
-                                 <Button onClick={resumeOnClick}>Check out my Resume!</Button>
+                                 <Button size={mobileSize ? 'small' : 'medium'} onClick={resumeOnClick}>Check out my Resume!</Button>
                             </Stack>
                         </Stack>
                     </Grid>
