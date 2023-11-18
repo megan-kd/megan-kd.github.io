@@ -1,10 +1,12 @@
 /* File: font.css */
 @font-face {
     font-family: 'Roboto Mono';
+    font-display: 'swap';
     src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Mansalva';
+    font-display: 'swap';
     src: url('./fonts/Mansalva-Regular.ttf') format('truetype');
 };
