@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const desktopSize = useMediaQuery(theme.breakpoints.up('xs'));
     const smallSize = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
-    console.log(desktopSize);
+
     return (
         <> {desktopSize ?
             <AppBar position={'sticky'} id={'appbar'}>

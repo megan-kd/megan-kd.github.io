@@ -10,12 +10,12 @@ const AboutMe = (props) => {
     };
 
     const imgStyle = {
-        float: 'left',
-        paddingLeft: '10px'
+       padding: '0 15px 0 15px',
     };
 
     const textStyle = {
-        display: 'inline-flex !important'
+        display: 'inline-flex !important',
+        paddingTop: '0px'
     };
 
     return (
@@ -26,8 +26,8 @@ const AboutMe = (props) => {
                         Megan DeYoung
                     </Typography>
                 </Divider>
-                <Grid container xs={12} spacing={{ xs: 2, md: 6, lg: 6}} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item xs={8.5} sm={7} md={6} lg={5} xl={4} style={imgStyle}>
+                <Grid container xs={12} spacing={{ xs: 3, md: 3, lg: 6}} justifyContent={'center'} alignItems={'stretch'}>
+                    <Grid item xs={8} sm={8} md={6} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
@@ -37,9 +37,9 @@ const AboutMe = (props) => {
                                     title={'about_me'}
                                 />
                             </Card>
-                            <Stack direction={'row'} spacing={2} justifyContent={'center'}>
+                            <Stack direction={'row'} spacing={2} justifyContent={'center'} sx={{padding: '0 10px 0 10px'}}>
                                 <Link to="contact" spy={true} smooth={true} offset={appBarOffset} duration={500}>
-                                    <Button>Let's Connect!</Button>
+                                    <Button size='small'>Let's Connect!</Button>
                                 </Link>
                                  <Button onClick={resumeOnClick}>Check out my Resume!</Button>
                             </Stack>
