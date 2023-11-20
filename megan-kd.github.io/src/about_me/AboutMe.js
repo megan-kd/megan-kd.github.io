@@ -39,7 +39,7 @@ const AboutMe = (props) => {
                                 <CardMedia
                                     component={"img"}
                                     sx={{ height: '60%', objectFit: "contain" }}
-                                    image={"/about_me.png"}
+                                    image={"/about_me.avif"}
                                     title={'about_me'}
                                 />
                             </Card>
