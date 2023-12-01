@@ -16,6 +16,8 @@ const ProjectsSection = (props) => {
             projectDescription={card.description}
             projectTechnologies={card.technologies}
             projectDate={card.date}
+            projectLocation={card.location}
+            projectLink = {card.links}
         />
     </Grid>
   )

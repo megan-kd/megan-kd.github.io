@@ -4,6 +4,7 @@ export const projectsData = [
         subtitle: "Computer Networking, Algorithm Design, Open Source",
         imagePath: "/projectpics/2.png",
         imageTitle: "image 1",
+        location: 'Pacific University',
         description:  <>
         <p>
             Learning about computer networking often requires access to college courses, which are not accessible to everyone who is interested in the topic. Scenic Routing is an open source resource that walks computer science students through the process of creating their own computer networking projects. The project is divided into three components:
@@ -22,7 +23,7 @@ export const projectsData = [
             },
             {
                 title: "Final Report",
-                url: "https://github.com/crumbj/Scenic-Routing"
+                url: "https://github.com/crumbj/Scenic-Routing/blob/main/Final%20Report%20-%20Scenic%20Routing.pdf"
             },
         ],
         date: "Fall 2020 - Spring 2021",
@@ -34,6 +35,8 @@ export const projectsData = [
         subtitle: "Full-stack Development",
         imagePath: "/projectpics/1.png",
         imageTitle: "image 2",
+        location: 'Intel Corporation',
+        links: null,
         description: <>
             <p>
                 I redesigned and implemented a UI for a bluetooth qualification results database by updating previous functionality and improving performance of original GUI. My improvements allowed the users to query test case results based on firmware builds or host builds, compare results across different builds, keep track of failures specific to certain bluetooth cards, and manually update results in the database. The new design cut query times by more than half and was used across several teams.
@@ -47,6 +50,8 @@ export const projectsData = [
         subtitle: "Python Scripting, Automated Reporting",
         imagePath: "/projectpics/5.png",
         imageTitle: "image 3",
+        location: 'KPMG',
+        links: null,
         description: <>
             <p>
                 I supported a project management and application migration team to migrate 47 applications to a new cloud environment for use by thousands of users. In order to better inform the client of migration progress, I designed and implemented automated reporting for tracking migration task progress and deadlines using C# and Python. As a result, 15 hours of manpower was saved per day manually inputting and sharing data. This improvement allowed for daily reporting and consistency across the data shared.
@@ -60,6 +65,8 @@ export const projectsData = [
         subtitle: "Python Scripting, Test Automation, Automated Reporting",
         imagePath: "/projectpics/3.png",
         imageTitle: "image 3",
+        location: 'Intel Corporation',
+        links: null,
         description: <>
             <p>
             In order to maintain compliance with Bluetooth SIG Product qualification and rigorously test bluetooth chipset firmware, I created the following tools:
@@ -85,6 +92,8 @@ export const projectsData = [
         subtitle: "Full-stack Development, Azure Data Factory, Informatica",
         imagePath: "/projectpics/4.png",
         imageTitle: "image 3",
+        location: 'KPMG',
+        links: null,
         description: <>
             <p>
             This UI allowed users to access information relevant to their data and metric accelerators. The features included:
@@ -125,7 +134,7 @@ export const skillsData = [
 export const aboutMeData = <>
  <p >I am a software engineer interested in full-stack development, automation, and diversifying tech. It is so fulfilling to work on applications knowing that it will make the lives of real people easier! I thrive best in roles where I am collaborating with many different teams. My favorite part of software engineering is the iteration— getting to the best solution through meaningful discussions, taking problems head on, and finding any improvements (no matter how small) is what makes me most energized. I am drawn to full-stack development because I have so much fun on the frontend and the backend!</p>
  <p>I graduated from Pacific University as a Computer Science major in 2021 where my instruction was largely based around C and C++. Because of my interest in computer networking, I capped off my education on a senior project with two other students to create and fully document a virtual network, routing protocol, and network visualization tool. Our goal was to make a comprehensive, open source project to help computer science students dive into learning about networking and use it as a foundation for their own projects.</p>
- <p>While in school, I worked at Intel for a year on a Software Validation team. I built scripts and tools in Python to help automate their Bluetooth Qualification CI testing processes. I was most excited about working with hardware for the first time and using sensors to gather real time data! This job exposed me to working with front-end technologies and allowed me to hone my skills on the backend!</p>
+ <p>While pursuing my degree, I worked at Intel for a year on a Software Validation team. I built scripts and tools in Python to help automate their Bluetooth Qualification CI testing processes. I was most excited about working with hardware for the first time and using sensors to gather real time data! This job exposed me to working with front-end technologies and allowed me to hone my skills on the backend!</p>
  <p>In my last position at KPMG I led and contributed to several UI projects as a full-stack developer for 2 years. On these projects I was involved at every step of the process from gathering requirements, collaborating with designers, implementing and testing frontend features and backend APIs, and writing scripts and working with infrastructure teams to deploy apps to production environments in Azure and AKS. What I enjoyed most was working with wonderful UI/UX designers and bring their vision to life, as well as continuously work with clients to build UIs that speak to their needs. </p>
  <p>In my free time, I enjoy baking, reading horror novels, and playing Slay the Spire! You can find me hiking or playing PokemonGO outdoors if it’s not too hot and there’s not too many hills ( ‾́ ◡ ‾́ )</p>
 </>;

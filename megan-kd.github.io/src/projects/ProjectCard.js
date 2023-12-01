@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, CardHeader, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton } from '@mui/material';
+import { CardContent, Link, CardMedia, CardHeader, Dialog, Typography, Slide, Stack, DialogContent, DialogTitle, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
     borderRadius: '20px',
     "&:hover": {
       cursor: 'pointer !important'
-  },
+    },
   };
 
   const DialogTitleStyle = {
@@ -50,6 +50,28 @@ const ProjectCard = (props) => {
   const handleClose = () => {
     setModalOpen(false);
   };
+
+  const formatProjectLinks = () => {
+    const data = props.projectLink;
+    const links = data.map(element => {
+      return <Link color={'inherit'} href={element.url} aria-label={element.title + " link"} rel="noopener noreferrer" target="_blank">{element.title}</Link>
+    });
+
+    console.log(links);
+
+    return (
+      <>
+        <Typography variant='h8' fontWeight={'bold'}>
+          <Stack direction={'row'} spacing={2}>
+            Links: 
+            <div>&nbsp;</div>
+            {links}
+          </Stack>
+        </Typography>
+
+      </>
+    );
+  }
 
   return (
     <>
@@ -86,14 +108,16 @@ const ProjectCard = (props) => {
         <DialogContent>
           <Stack>
             <Typography>{props.projectDescription}</Typography>
-            <Typography variant='h8'>
+            <Typography variant='h8' fontWeight={'bold'}>
               <Stack direction={'horizontal'}>
                 <CalendarMonthIcon />
                 <div>{':'}&nbsp;</div>
                 {props.projectDate}
               </Stack>
             </Typography>
-            <Typography variant='h8'>Technologies: {props.projectTechnologies}</Typography>
+            <Typography variant='h8' fontWeight={'bold'}>Patron: {props.projectLocation}</Typography>
+            {props.projectLink ? formatProjectLinks() : null}
+            <Typography variant='h8' fontWeight={'bold'}>Technologies: {props.projectTechnologies}</Typography>
           </Stack>
         </DialogContent>
       </Dialog>
