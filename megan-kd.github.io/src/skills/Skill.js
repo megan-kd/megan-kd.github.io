@@ -28,7 +28,7 @@ const Skill = (props) => {
     textAlign: 'center'
   };
 
-  const bulletList = skillsList.map((skill) => <li>{skill}</li>)
+  const bulletList = skillsList.map((skill, index) => <li key={"skill-" + skill + "-" + index}>{skill}</li>)
   return (
     <>
       <Card elevation={0}>

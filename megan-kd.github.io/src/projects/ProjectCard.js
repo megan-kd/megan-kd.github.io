@@ -6,7 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
+  return <Slide direction={'up'} ref={ref} {...props} />;
 });
 
 const ProjectCard = (props) => {
@@ -53,8 +53,8 @@ const ProjectCard = (props) => {
 
   const formatProjectLinks = () => {
     const data = props.projectLink;
-    const links = data.map(element => {
-      return <Link color={'inherit'} href={element.url} aria-label={element.title + " link"} rel="noopener noreferrer" target="_blank">{element.title}</Link>
+    const links = data.map((element, index) => {
+      return <Link key={"element-" + element.title + "-" + index} color={'inherit'} href={element.url} aria-label={element.title + " link"} rel="noopener noreferrer" target="_blank">{element.title}</Link>
     });
 
     return (
@@ -97,8 +97,8 @@ const ProjectCard = (props) => {
         TransitionComponent={Transition}
         maxWidth={"md"}
       >
-        <DialogTitle disableTypography style={DialogTitleStyle}>
-          <Typography variant='h5' fontWeight={'bold'}>{props.projectTitle}</Typography>
+        <DialogTitle style={DialogTitleStyle}>
+          {props.projectTitle}
           <IconButton onClick={handleClose}>
             <CloseIcon />
           </IconButton>

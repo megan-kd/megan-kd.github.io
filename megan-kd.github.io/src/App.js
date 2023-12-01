@@ -130,7 +130,9 @@ const themeOptions = {
       styleOverrides: {
         root: {
           padding: '25px 30px 16px 30px',
-          textAlign: 'center'
+          textAlign: 'center',
+          fontSize: "1.5rem",
+          fontWeight: 'bold'
         }
       }
     },

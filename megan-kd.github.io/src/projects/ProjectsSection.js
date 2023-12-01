@@ -5,8 +5,8 @@ import { Divider, Stack, Typography } from '@mui/material';
 
 const ProjectsSection = (props) => {
   const projectData = props.data;
-  const cards = projectData.map((card) => 
-    <Grid xs={4} display={"flex"} justifyContent={"center"}>
+  const cards = projectData.map((card, index) => 
+    <Grid xs={4} display={"flex"} justifyContent={"center"} key={"projectcard-" + index}>
         <ProjectCard 
             projectTitle={card.title}
             projectSubtitle={card.subtitle}
