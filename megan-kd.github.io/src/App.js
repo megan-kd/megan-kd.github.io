@@ -101,7 +101,7 @@ const themeOptions = {
     },
     MuiButton: {
       styleOverrides: {
-        root: {
+        contained: {
           background: 'linear-gradient(45deg, #FE6B8B 30%, #F4A4B1 90%)',
           border: 0,
           borderRadius: 3,

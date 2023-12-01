@@ -36,6 +36,7 @@ const Navbar = () => {
                                     color='inherit'
                                     size={smallSize ? "small" : "medium"}
                                     sx={smallSize ? smallStyle : {}}
+                                    variant='contained'
                                 >
                                     About Me
                                 </Button>
@@ -45,6 +46,7 @@ const Navbar = () => {
                                     color='inherit'
                                     size={smallSize ? "small" : "medium"}
                                     sx={smallSize ? smallStyle : {}}
+                                    variant='contained'
                                 >
                                     Skills
                                 </Button>
@@ -54,6 +56,7 @@ const Navbar = () => {
                                     color='inherit'
                                     size={smallSize ? "small" : "medium"}
                                     sx={smallSize ? smallStyle : {}}
+                                    variant='contained'
                                 >
                                     Projects
                                 </Button>
@@ -63,6 +66,7 @@ const Navbar = () => {
                                     color='inherit'
                                     size={smallSize ? "small" : "medium"}
                                     sx={smallSize ? smallStyle : {}}
+                                    variant='contained'
                                 >
                                     Contact
                                 </Button>

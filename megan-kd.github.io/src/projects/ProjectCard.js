@@ -57,8 +57,6 @@ const ProjectCard = (props) => {
       return <Link color={'inherit'} href={element.url} aria-label={element.title + " link"} rel="noopener noreferrer" target="_blank">{element.title}</Link>
     });
 
-    console.log(links);
-
     return (
       <>
         <Typography variant='h8' fontWeight={'bold'}>
