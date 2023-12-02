@@ -40,7 +40,7 @@ const AboutMe = (props) => {
                     </Typography>
                 </Divider>
                 <Grid container spacing={{ xs: 3, md: 3, lg: 6 }} justifyContent={'center'} alignItems={'stretch'}>
-                    <Grid item={true} xs={8} sm={8} md={6} lg={5} xl={4} style={imgStyle}>
+                    <Grid item={true} xs={8} sm={8} md={5} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
                                 <CardMedia
@@ -58,7 +58,7 @@ const AboutMe = (props) => {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item={true} xs={11} sm={11} md={11} lg={7} xl={7} style={textStyle}>
+                    <Grid item={true} xs={11} sm={11} md={11} lg={6} xl={7} style={textStyle}>
                         {showMoreSize ? <Typography sx={{ wordBreak: 'break-word' }} variant='body2'>{data}</Typography> : <><Collapse
                             in={open}
                             collapsedSize={'250px'}

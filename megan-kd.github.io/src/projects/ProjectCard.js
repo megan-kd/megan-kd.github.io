@@ -96,6 +96,7 @@ const ProjectCard = (props) => {
         onClose={handleClose}
         TransitionComponent={Transition}
         maxWidth={"md"}
+        aria-labelledby='project modal'
       >
         <DialogTitle style={DialogTitleStyle}>
           {props.projectTitle}
