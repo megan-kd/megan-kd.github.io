@@ -159,7 +159,7 @@ function App() {
     <>
       <ThemeProvider theme={customTheme}>
         <CssBaseline enableColorScheme />
-        <Stack spacing={2}>
+        <Stack spacing={2} style={{overflow: 'none'}}>
           <Navbar/>
           <AboutMe data={aboutMeData} />
           <SkillsSection data={skillsData} />

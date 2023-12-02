@@ -39,7 +39,7 @@ const AboutMe = (props) => {
                         Megan DeYoung
                     </Typography>
                 </Divider>
-                <Grid container spacing={{ xs: 3, md: 3, lg: 6 }} justifyContent={'center'} alignItems={'stretch'}>
+                <Grid container spacing={{ xs: 3, md: 3, lg: 6 }} justifyContent={'center'} alignItems={'stretch'} maxWidth={'100%'}>
                     <Grid item={true} xs={8} sm={8} md={5} lg={5} xl={4} style={imgStyle}>
                         <Stack spacing={3}>
                             <Card >
