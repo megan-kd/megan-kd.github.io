@@ -10,7 +10,7 @@ const AboutMe = (props) => {
     const [open, setOpen] = useState(false);
 
     const resumeOnClick = () => {
-        window.open('/megandeyoung_resume_10_2023.pdf', '_blank');
+        window.open('/megandeyoung_resume.pdf', '_blank');
     };
 
     const imgStyle = {
